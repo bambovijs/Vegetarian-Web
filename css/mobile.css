@@ -1,0 +1,222 @@
+/* FOR MOBILE */
+
+/* FONTS
+-------------------------*/
+@font-face {
+    font-family: Gotham;
+    src: url(./fonts/gotham.woff);
+}
+
+/* COLORS
+-------------------------
+Gray(text) - #707070;
+Green(all other) - #228d66
+*/
+
+
+/* Global styles
+-------------------------*/
+
+/* Apply a natural box layout model to all elements,
+but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Gotham;
+}
+
+p {
+  color: #707070;
+}
+
+div {
+  display: block;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.border {
+  border: 1px solid red;
+}
+
+.container {
+  width: 375px;
+  height: 665px;
+  margin: 0 auto;
+  clear: both;
+  border: 1px solid red;
+}
+
+.container h1 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 26px;
+  color: #228d66;
+  padding-top: 180px;
+  margin-left: 113px;
+  text-align: justify;
+}
+
+.text {
+  position: relative;
+  font-size: 12px;
+  width: 165px;
+  height: auto;
+  margin: 32px 0 0 113px;
+}
+
+main a {
+  position: relative;
+  width: 27px;
+  height: 10px;
+  color: #228d66;
+  font-size: 9px;
+  margin: 0 auto;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 665px;
+  background-image: url(../images/header-bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.light-transparent {
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 665px;
+  width: auto;
+  top: 0;
+}
+
+.top-bar {
+  position: fixed;
+  height: 95px;
+  width: 100%;
+}
+
+.logo {
+  position: absolute;
+  background-image: url(../images/logo-m.png);
+  background-repeat: no-repeat;
+  height: 80px;
+  width: 60px;
+  margin: 20px 0 0 24px;
+}
+
+.menu {
+  position: absolute;
+  top: 49px;
+  right: 38px;
+  text-decoration: none;
+  font-size: 9px;
+  color: #228d66;
+}
+
+.greeting {
+  position: absolute;
+  height: 85px;
+  width: 130px;
+  top: 205px;
+  left: 110px;
+  transform: rotate(-90deg);
+}
+
+.greeting p {
+  font-size: 12px;
+  letter-spacing: .304px;
+  line-height: 0.9;
+  color: #ffffff;
+}
+
+.header-text {
+  position: absolute;
+  width: 170px;
+  height: 83px;
+  top: 315px;
+  left: 100px;
+  word-spacing: -5px;
+}
+
+.header-text p {
+  font-size: 16px;
+  color: #228d66;
+}
+
+.header-text span {
+  font-size: 36px;
+}
+
+/* Main
+-------------------------*/
+.offer-leafs {
+  height: 300px;
+  width: 123px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.col1 {
+  width: 100%;
+  height: 100px;
+  float: left;
+  margin: 0 auto;
+}
+
+.col2 {
+  width: 100%;
+  height: 100px;
+  float: left;
+  margin: 0 auto;
+}
+
+.col3 {
+  width: 100%;
+  height: 100px;
+  float: left;
+  margin: 0 auto;
+}
+
+.leaf {
+  position: relative;
+  margin: 0 auto;
+  width: 47px;
+  height: 59px;
+  background-image: url(../images/leaf-m.png);
+  background-repeat: np-repeat;
+}
+
+.leaf p {
+  position: absolute;
+  font-size: 12px;
+  color: #288d66;
+  text-align: center;
+}
+
+.brand-identity p {
+  height: 13px;
+  width: 106px;
+  margin: 65px 0 0 -30px;
+}
+
+.web-design-and-programming p {
+  height: 27px;
+  width: 126px;
+  margin: 65px 0 0 -40px;
+}
+
+.printing-materials p {
+  height: 27px;
+  width: 70px;
+  margin: 65px 0 0 -13px;
+}
