@@ -46,7 +46,7 @@ p {
   width: 1280px;
   height: 800px;
   margin: 0 auto;
-  border: 1px solid red
+  border: 1px solid red;
 }
 
 .container h1 {
@@ -55,29 +55,45 @@ p {
   font-size: 36px;
   width: 200px;
   color: #228d66;
-  margin-top: 250px;
-  left: 295px;
   border: 1px solid black;
+  overflow: hidden;
+}
+
+main .container .content-wrapper {
+    margin-top: 250px;
+}
+
+.content-wrapper {
+  position: relative;
+  width: 690px;
+  margin: 0 auto;
+  border: 1px solid brown;
 }
 
 .text {
   position: relative;
   font-size: 14px;
-  width: 579px;
-  height: 45px;
-  margin: 30px 0 0 296px;
+  margin-top: 30px;
+  text-align: left;
   line-height: normal;
   border: 1px solid red;
 }
 
-main a {
+.more {
   position: relative;
-  height: 17px;
   width: 47px;
-  color: #228d66;
+  height: 17px;
+  margin: 0 auto;
+  margin-top: 130px;
+}
+
+.more a {
+  width: 47px;
+  height: 17px;
   font-size: 16px;
-  margin-left: 615px;
-  margin-top: 224px;
+  color: #228d66;
+  text-decoration: none;
+  margin: 0 auto;
 }
 
 /* Header
@@ -91,6 +107,12 @@ header {
   background-size: cover;
 }
 
+header .content-wrapper {
+  position: relative;
+  margin-top: 85px;
+  height: 594px;
+}
+
 .light-transparent {
   background-color: rgba(255, 255, 255, 0.7);
   height: 800px;
@@ -102,7 +124,7 @@ header {
   position: fixed;
   height: 200px;
   width: 1280px;
-  border: 1px solid purple;
+  /* border: 1px solid purple; */
 }
 
 .logo {
@@ -126,11 +148,12 @@ header {
 
 .greeting {
   position: absolute;
-  height: 257px;
-  width: 183px;
-  top: 160px;
-  left: 410px;
+  height: 273px;
+  width: 293px;
+  margin-top: 10px;
+  margin-left: 95px;
   transform: rotate(-90deg);
+  border: 1px solid black;
 }
 
 .greeting p {
@@ -140,17 +163,16 @@ header {
 }
 
 .header-text {
-  position: absolute;
-  height: 144px;
-  width: 575px;
-  top: 378px;
-  left: 297px;
-  word-spacing: -10px;
+  position: relative;
+  height: 300px;
+  margin-top: 293px;
+  border: 1px solid blue;
 }
 
 .header-text p {
   font-size: 36px;
   color: #228b66;
+
 }
 
 .header-text span {
@@ -235,6 +257,9 @@ footer {
   height: 800px;
 }
 
+footer .content-wrapper {
+  margin-top: 250px;
+}
 /* Media queries
 -------------------------*/
 @media only screen and (max-width: 1280px){
@@ -244,24 +269,7 @@ footer {
     border:1px solid red;
   }
 
-  .container h1 {
-    border: 1px solid red;
-  }
-
   .top-bar {
     width: 100%;
-  }
-
-  .header-text {
-    width: 45vw;
-    margin: 0 auto;
-  }
-
-  .text {
-    position: relative;
-    width: 45vw;
-    height: auto;
-    /* margin: 290px auto 0 auto; */
-    border: 1px solid purple;
   }
 }
