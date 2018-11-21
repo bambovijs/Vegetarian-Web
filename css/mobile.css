@@ -35,10 +35,6 @@ p {
   color: #707070;
 }
 
-div {
-  display: block;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
@@ -48,10 +44,11 @@ div {
 }
 
 .container {
+  position: relative;
   width: 375px;
-  height: 665px;
+  min-height: 665px;
+  height: auto;
   margin: 0 auto;
-  clear: both;
   border: 1px solid red;
 }
 
@@ -60,17 +57,35 @@ div {
   text-transform: uppercase;
   font-size: 26px;
   color: #228d66;
-  padding-top: 180px;
-  margin-left: 113px;
+  padding: 180px 0 30px 0;
   text-align: justify;
+}
+
+.content-wrapper {
+  position: relative;
+  width: 165px;
+  margin: 0 auto;
+  border: 1px solid red;
 }
 
 .text {
   position: relative;
   font-size: 12px;
-  width: 165px;
   height: auto;
-  margin: 32px 0 0 113px;
+}
+
+.more {
+  position: relative;
+  min-height: 10px;
+  width: 27px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.more a {
+  font-size: 9px;
+  color: #228d66;
+  text-decoration: none;
 }
 
 main a {
@@ -82,14 +97,22 @@ main a {
   margin: 0 auto;
 }
 
+/* Header
+-------------------------*/
 header {
   position: relative;
   width: 100%;
-  height: 665px;
+  min-height: 665px;
   background-image: url(../images/header-bg.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
+}
+
+header .content-wrapper {
+  position: relative;
+  height: 170px;
+  margin-top: 230px;
 }
 
 .light-transparent {
@@ -101,8 +124,8 @@ header {
 
 .top-bar {
   position: fixed;
-  height: 95px;
-  width: 100%;
+  height: 100px;
+  width: 375px;
 }
 
 .logo {
@@ -124,11 +147,12 @@ header {
 }
 
 .greeting {
-  position: absolute;
-  height: 85px;
-  width: 130px;
-  top: 205px;
-  left: 110px;
+  /* position: absolute; */
+  position: relative;
+  height: 130px;
+  width: 85px;
+  margin-left: 55px;
+  margin-top: -25px;
   transform: rotate(-90deg);
 }
 
@@ -140,12 +164,11 @@ header {
 }
 
 .header-text {
-  position: absolute;
-  width: 170px;
+  position: relative;
   height: 83px;
-  top: 315px;
-  left: 100px;
+  margin-top: -23px;
   word-spacing: -5px;
+  /* border: 1px solid black; */
 }
 
 .header-text p {
