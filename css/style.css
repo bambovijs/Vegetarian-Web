@@ -131,8 +131,7 @@ header .content-wrapper {
   background-repeat: no-repeat;
   height: 145px;
   width: 110px;
-  top: 40px;
-  left: 80px;
+  margin: 40px 0 0 80px;
 }
 
 .menu {
