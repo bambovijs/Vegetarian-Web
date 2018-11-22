@@ -175,10 +175,15 @@ header .content-wrapper {
 -------------------------*/
 .offer-leafs {
   position: relative;
-  height: 170px;
   width: 602px;
   margin: 0 auto;
   margin-top: 85px;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .col {
@@ -246,9 +251,15 @@ footer .content-wrapper {
     overflow: hidden;
   }
 
+  .greeting {
+    margin-left: 9vw;
+  }
+
   .greeting p {
     font-size: 3vw;
+    line-height: 3.4vw;
     margin-top: -0.2vw;
+    margin-bottom: -0.2vw;
   }
 
   .header-text p {
@@ -375,7 +386,6 @@ footer .content-wrapper {
   }
 
   .offer-leafs {
-    height: 300px;
     width: 123px;
     margin: 0 auto;
     margin-top: 50px;
