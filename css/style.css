@@ -46,7 +46,7 @@ p {
   width: 1280px;
   min-height: 800px;
   margin: 0 auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .container h1 {
@@ -55,19 +55,19 @@ p {
   font-size: 36px;
   width: 200px;
   color: #228d66;
-  border: 1px solid black;
   overflow: hidden;
 }
 
-main .container .content-wrapper {
-    margin-top: 250px;
+main .content-wrapper {
+  padding-top: 250px;
 }
 
 .content-wrapper {
   position: relative;
   width: 690px;
+  min-height: 800px;
   margin: 0 auto;
-  border: 1px solid brown;
+  /* border: 1px solid brown; */
 }
 
 .text {
@@ -76,7 +76,6 @@ main .container .content-wrapper {
   margin-top: 30px;
   text-align: left;
   line-height: normal;
-  border: 1px solid red;
 }
 
 .more {
@@ -91,6 +90,7 @@ main .container .content-wrapper {
   font-size: 16px;
   color: #228d66;
   text-decoration: none;
+  margin: 0 auto;
 }
 
 /* Header
@@ -106,8 +106,9 @@ header {
 
 header .content-wrapper {
   position: relative;
-  margin-top: 85px;
-  height: 594px;
+  padding-top: 85px;
+  min-height: 600px;
+  /* border: 1px solid blue; */
 }
 
 .light-transparent {
@@ -130,9 +131,8 @@ header .content-wrapper {
   background-repeat: no-repeat;
   height: 145px;
   width: 110px;
-  /* top: 40px;
-  left: 80px; */
-  margin: 40px 0 0 80px;
+  top: 40px;
+  left: 80px;
 }
 
 .menu {
@@ -151,7 +151,6 @@ header .content-wrapper {
   margin-top: 10px;
   margin-left: 95px;
   transform: rotate(-90deg);
-  border: 1px solid black;
 }
 
 .greeting p {
@@ -164,7 +163,6 @@ header .content-wrapper {
   position: relative;
   height: 300px;
   margin-top: 293px;
-  border: 1px solid blue;
 }
 
 .header-text p {
@@ -184,14 +182,12 @@ header .content-wrapper {
   width: 602px;
   margin: 0 auto;
   margin-top: 85px;
-  margin: 1px solid black;
 }
 
 .col1 {
   width: 33%;
   height: 170px;
   float: left;
-  border: 1px solid purple;
 }
 
 .col2 {
@@ -200,14 +196,12 @@ header .content-wrapper {
   float: left;
   margin-left: 3px;
   margin-right: 3px;
-  border: 1px solid purple;
 }
 
 .col3 {
   width: 33%;
   height: 170px;
   float: left;
-  border: 1px solid purple;
 }
 
 .leaf {
@@ -216,7 +210,6 @@ header .content-wrapper {
   width: 89px;
   background-image: url(../images/leaf.png);
   background-repeat: no-repeat;
-  border: 1px solid red;
 }
 
 .leaf p {
@@ -256,7 +249,7 @@ footer {
 }
 
 footer .content-wrapper {
-  margin-top: 250px;
+  padding-top: 250px;
 }
 /* Media queries
 -------------------------*/
