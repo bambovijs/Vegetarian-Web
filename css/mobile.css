@@ -87,15 +87,6 @@ p {
   text-decoration: none;
 }
 
-main a {
-  position: relative;
-  width: 27px;
-  height: 10px;
-  color: #228d66;
-  font-size: 9px;
-  margin: 0 auto;
-}
-
 /* Header
 -------------------------*/
 header {
