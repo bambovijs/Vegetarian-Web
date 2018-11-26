@@ -62,12 +62,18 @@ main .content-wrapper {
   padding-bottom: 100px;
 }
 
+.wide-image {
+  background-image: url(../images/iMac-vegetarian.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
 .content-wrapper {
   position: relative;
   width: 690px;
   min-height: 800px;
   margin: 0 auto;
-  /* border: 1px solid red; */
 }
 
 .text {
@@ -124,6 +130,8 @@ header .content-wrapper {
   position: fixed;
   height: 200px;
   width: 1280px;
+  /* Z-index for wide-image class */
+  z-index: 2;
 }
 
 .logo {
