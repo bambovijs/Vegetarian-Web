@@ -144,6 +144,7 @@ header .content-wrapper {
 }
 
 .menu {
+  display: block;
   position: absolute;
   top: 107px;
   right: 80px;
@@ -151,6 +152,51 @@ header .content-wrapper {
   font-size: 16px;
   color: #228b66;
 }
+
+.menu.active {
+  display: none;
+}
+
+.menu-open {
+  display: none;
+  position: absolute;
+  top: 107px;
+  right: 80px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #228b66;
+  height: 100px;
+  width: 150px;
+}
+
+.menu-open.active{
+  display: block;
+}
+
+.menu-open a {
+  display: none;
+  color: #228b66;
+  float: right;
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.menu-open .close{
+  color: #ffffff;
+}
+
+.menu-open ul {
+  list-style: none;
+  position: relative;
+  margin-top: 40px;
+  line-height: 20px;;
+}
+
+.menu-open ul::after {
+  clear: both;
+}
+
 
 .greeting {
   position: absolute;
