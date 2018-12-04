@@ -7,8 +7,8 @@ Green(all other) - #228d66;
 /* Fonts
 -------------------------*/
 @font-face {
-  font-family: "Gotham";
-  src: url(../fonts/gotham.woff);
+  font-family: Gotham;
+  src: url(./fonts/gotham.woff);
 }
 
 /* Apply a natural box layout model to all elements,
@@ -24,7 +24,7 @@ html {
 /* Global styles
 -------------------------*/
 body {
-  font-family: Gotham3;
+  font-family: Gotham;
   overflow-x: hidden;
 }
 
@@ -46,6 +46,7 @@ p {
   width: 1280px;
   min-height: 800px;
   margin: 0 auto;
+  border: 1px solid red;
 }
 
 .container h1 {
@@ -60,19 +61,18 @@ main .content-wrapper {
   padding-bottom: 100px;
 }
 
+.wide-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
 .content-wrapper {
   position: relative;
   width: 690px;
   min-height: 800px;
   margin: 0 auto;
-}
-
-.wide-image img {
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 1;
-  height: 100%;
-  width: 100%;
+  border: 1px solid blue;
 }
 
 .text {
@@ -84,21 +84,21 @@ main .content-wrapper {
 }
 
 .more {
-  width: auto;
-  text-align: center;
+  width: 47px;
   min-height: 17px;
-  /* position: absolute; */
+  position: absolute;
   left: 0;
   right: 0;
-  padding-top: 130px;
-  padding-bottom: 30px;
+  margin: 0 auto;
+  margin-top: 130px;
+  margin-bottom: 30px;
+  border: 1px solid red;
 }
 
 .more a {
   font-size: 16px;
   color: #228d66;
   text-decoration: none;
-  margin: 0 auto;
 }
 
 /* Header
@@ -116,7 +116,6 @@ header .content-wrapper {
   position: relative;
   padding-top: 85px;
   min-height: 600px;
-  overflow: hidden;
 }
 
 .light-transparent {
@@ -160,17 +159,18 @@ header .content-wrapper {
 .menu-open {
   display: none;
   position: absolute;
+  text-decoration: none;
   top: 107px;
   right: 80px;
-  text-decoration: none;
   font-size: 16px;
   color: #228b66;
-  /* height: 100px;
-  width: 150px; */
+  height: 110px;
+  width: 150px;
 }
 
-.menu-open.active{
+.menu-open.active {
   display: block;
+  border: 1px solid red;
 }
 
 .menu-open a {
@@ -178,13 +178,21 @@ header .content-wrapper {
   float: right;
   display: block;
   text-decoration: none;
-  font-size: 26px;
-  margin-bottom: 23px;
+  font-size: 16px;
+}
+
+.menu-open ul li a{
+  color: #228b66;
+  float: right;
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 .menu-open .close{
-  cursor: pointer;
   font-size: 16px;
+  color: #288d66;
+  z-index: 3;
 }
 
 .menu-open ul {
@@ -194,25 +202,14 @@ header .content-wrapper {
   line-height: 20px;
 }
 
-/* .menu-open ul::after {
-  clear: both;
-} */
-
-.menu-open a:hover {
-  opacity: 0.6;
-}
-
-.menu-open li a:active {
-  opacity: 0.6;
-}
-
 .greeting {
   position: absolute;
-  height: 273px;
-  width: 293px;
-  margin-top: 10px;
-  margin-left: 95px;
+  /* height: 273px;
+  width: 293px; */
+  margin-top: 85px;
+  margin-left: 130px;
   transform: rotate(-90deg);
+  border: 1px solid purple;
 }
 
 .greeting p {
@@ -262,7 +259,7 @@ header .content-wrapper {
   margin: 0 auto;
   height: 113px;
   width: 89px;
-  background-image: url(./images/leaf.png);
+  background-image: url(../images/leaf.png);
   background-repeat: no-repeat;
 }
 
@@ -276,7 +273,7 @@ header .content-wrapper {
 
 .brand-identity p {
   height: 15px;
-  width: 135px;
+  width: 122px;
   margin-left: -16px;
 }
 
@@ -305,11 +302,9 @@ footer {
 footer .content-wrapper {
   padding-top: 250px;
 }
-
-/* Media Queries
+/* Media queries
 -------------------------*/
 @media only screen and (max-width: 1280px){
-
   header{
     width: 100%;
   }
@@ -319,19 +314,11 @@ footer .content-wrapper {
     max-width: 1280px;
   }
 
-  .menu-open {
-    display: none;
-  }
-
-  .greeting {
-    margin-left: 9vw
-  }
-
   .greeting p {
+    display: none;
     font-size: 3vw;
-    line-height: 2vw;
-    margin-top: -0.2vw;
-    margin-bottom: -0.2vw;
+    line-height: 3.4vw;
+    margin-left: 100px;
   }
 
   .header-text p {
@@ -371,22 +358,28 @@ footer .content-wrapper {
     width: 100%;
     margin-bottom: 10px;
   }
+
+  .menu-open {
+    display: none;
+  }
+
+  .menu-open .close{
+    font-size: 16px;
+    color: #288d66;
+    z-index: 4;
+  }
 }
 
 @media only screen and (max-width: 600px){
   .container {
     width: 100%;
-  }
-
-  .container h1 {
-    font-size: 26px;
+    min-width: 375px;
   }
 
   header .content-wrapper {
     position: relative;
     padding-top: 85px;
     min-height: 600px;
-    min-width: 125px;
   }
 
   .top-bar {
@@ -395,7 +388,9 @@ footer .content-wrapper {
   }
 
   .content-wrapper {
+    min-width: 200px;
     margin: 0 auto;
+    border: 1px solid brown;
   }
 
   .logo {
@@ -412,156 +407,38 @@ footer .content-wrapper {
     font-size: 9px;
   }
 
+  .triangle {
+    display: none;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 600px 600px 0;
+    border-color: transparent #ffffff transparent transparent;
+  }
+
+  .triangle.active {
+    display: block;
+  }
+
   .menu-open {
+    position: absolute;
     top: 49px;
     right: 38px;
     font-size: 9px;
   }
-
-  .menu-open a {
-    font-size: 16px;
-  }
-
-  .menu-open .close {
-    font-size: 9px;
-  }
-
-  .triangle {
-    display: none;
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 600px 668px 0;
-    border-color: transparent #ffffff transparent transparent;
-    z-index: 3;
-  }
-
-  .active {
-    display: block;
-  }
-
-  .menu-open {
-    display: none;
-    position: absolute;
-    text-decoration: none;
-    top: 49px;
-    left: 170px;
-    color: #228d66;
-    height: 145px;
-    width: 150px;
-  }
-
-  .menu-open .active {
-    display: block;
-  }
-
-  .menu-open a {
-    color: #228b66;
-    float: right;
-    display: block;
-    text-decoration: none;
-    font-size: 16px;
-    margin-bottom: 23px;
-  }
-
-  .menu-open .close{
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 9px;
-    color: #228b66;
-    z-index: 5;
-    margin-bottom: 34px;
-  }
-
-  .menu-open ul {
-    list-style: none;
-    position: relative;
-    margin-top: 40px;
-    line-height: 20px;;
-  }
 }
 
 @media only screen and (max-width: 375px){
-  main .content-wrapper {
-    min-height: 600px;
-    min-width: 125px;
-  }
-
   .triangle {
     display: none;
-    position: absolute;
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 375px 668px 0;
+    border-width: 0 375px 600px 0;
     border-color: transparent #ffffff transparent transparent;
-    z-index: 3;
   }
 
-  .active {
+  .triangle.active {
     display: block;
-  }
-
-  .menu-open {
-    display: none;
-    position: absolute;
-    text-decoration: none;
-    top: 49px;
-    left: 140px;
-    color: #228d66;
-    height: 145px;
-    width: 150px;
-  }
-
-  .menu-open .active {
-    display: block;
-  }
-
-  .menu-open a {
-    color: #228b66;
-    float: right;
-    display: block;
-    text-decoration: none;
-    font-size: 16px;
-    margin-bottom: 23px;
-  }
-
-  .menu-open .close{
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 9px;
-    color: #228b66;
-    z-index: 5;
-    margin-bottom: 34px;
-  }
-
-  .menu-open ul {
-    list-style: none;
-    position: relative;
-    margin-top: 40px;
-    line-height: 20px;;
-  }
-
-  .header-text {
-    position: relative;
-  }
-
-  .header-text .p {
-    font-size: 4.3vw;
-  }
-
-  /* .greeting {
-    margin-left: 9vw;
-  } */
-
-  .greeting {
-    font-size: 4.2vw;
-    /* height: 22.13vw;
-    width: 44.53vw; */
-    /* margin-top: 83.7vw; */
-    line-height: 3vw;
   }
 }
